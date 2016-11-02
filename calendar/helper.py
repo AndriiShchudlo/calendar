@@ -8,14 +8,14 @@ class helper(object):
     def readDateFromKeyboard():
         lenght_date = 1
         lenght_date1 = 2
-        month_of_year = 13
+        month_of_year = 12
         emty_elementt = ''
         while 1:
                try:
                      inputDate = input("Please, input date (YYYY-MM or just MM  ) or press Enter (will be use current month): ") 
                      temp = inputDate
                      if inputDate == "":
-                        return temp  
+                        return helper.getCurrentDate() 
                      else :  
                          temp = temp.split("-")
                          if len(temp)> lenght_date1:
