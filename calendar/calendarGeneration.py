@@ -1,5 +1,5 @@
 ﻿
-from itertools import zip_longest
+
 class calendarGeneration(object):
    
       def monthIndex(month):
@@ -71,8 +71,8 @@ class calendarGeneration(object):
           february = 2
           leap_february = 29
           less_week = 7 
-          day_five_weeks = 35
-          day_six_weeks = 42
+          day_five_weeks = 34
+          day_six_weeks = 41
           year_index = calendarGeneration.yearIndex(year)
           month_index = calendarGeneration.monthIndex(month)
           century_index = calendarGeneration.centuryIndex(year)
@@ -97,7 +97,7 @@ class calendarGeneration(object):
               month_array.append(i)
               i+=1
           i = len(month_array)
-          if i<=35:
+          if i<=day_five_weeks:
               while i <= day_five_weeks:
                   month_array.append(empty_zero)
                   i+=1

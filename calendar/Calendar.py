@@ -27,9 +27,11 @@ class Calendar(object):
   
     def displayCalendar(self):
         printer.printDayName(self)   
-       
-       # calendar_now = calendar.monthcalendar(self.year, self.month)
+      #_______________________Select f-tion for calendar  Downloads_____________________________
+
+       #calendar_now = calendar.monthcalendar(self.year, self.month)
         calendar_now = calendarGeneration.calendarGeneration.generation(self.year,self.month)     
+      #_________________________________________________________________________________________  
         for i in range(len(calendar_now)):
              for j in range(len(calendar_now[i])):
                if j == self.saturday or j == self.sunday:
