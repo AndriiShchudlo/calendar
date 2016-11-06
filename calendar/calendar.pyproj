@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Calendar.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="color.py">
       <SubType>Code</SubType>
     </Compile>
@@ -31,7 +34,10 @@
     <Compile Include="main.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="myCalendar.py">
+    <Compile Include="calendarGeneration.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="printer.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
